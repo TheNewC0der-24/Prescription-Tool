@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif !important;
+    background-color: #f6f6f6 !important;
+}
+
+#prescription-form,
+#prescriptionTemplate {
+    box-shadow:
+        0px 0px 2.2px rgba(0, 0, 0, 0.07),
+        0px 0px 5.3px rgba(0, 0, 0, 0.05),
+        0px 0px 10px rgba(0, 0, 0, 0.042),
+        0px 0px 17.9px rgba(0, 0, 0, 0.035),
+        0px 0px 33.4px rgba(0, 0, 0, 0.028),
+        0px 0px 80px rgba(0, 0, 0, 0.02) !important;
+
+    background: white !important;
+}
+
+input,
+textarea,
+select,
+.btn {
+    text-decoration: none !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #0d6efd !important;
+}
+
+#prescriptionTemplate {
+    display: none;
+}
+
+#prescriptionTemplate :where(h1) {
+    color: rgb(0, 170, 255);
+}
+
+.one,
+.two {
+    color: rgb(0, 170, 255) !important;
+    height: 0.15rem !important;
+}
+
+#prescriptionTemplate :where(p) {
+    margin-bottom: 0 !important;
+}
+
+#nameT,
+#ageT,
+#genderT,
+#addressT,
+#dateT {
+    color: #0d6efd;
+}
+
+.mail a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mail a:hover {
+    color: #0d6efd;
+    text-decoration: underline;
+}
+
+@media (max-width: 767.5px) {
+    .prescription {
+        margin-top: 2rem !important;
+    }
+}
